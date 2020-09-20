@@ -53,6 +53,8 @@ const watchFiles = () => {
     gulp.watch(paths.js.watch, js);
 }
 
-const dev = gulp.series([clean, styles, js, watchFiles])
+const dev = gulp.series(clean, styles, js, watchFiles);
+
+export const build = gulp.series(clean, styles, js);
 
 export default dev;
