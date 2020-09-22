@@ -1,0 +1,1 @@
+export const handleplayerUpdate = ({ sockets }) => console.log(sockets);

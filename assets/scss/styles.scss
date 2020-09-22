@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import "variables";
 @import "reset";
+@import "login";
+@import "notifications";
+@import "chat";
+@import "game";
 
 * {
     box-sizing: border-box;
@@ -34,7 +38,7 @@ body{
 }
 &.loggedIn {
     .gameContainer {
-    display: block;
+    display: flex;
     }
   }
 }
